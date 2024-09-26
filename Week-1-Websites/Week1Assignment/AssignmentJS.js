@@ -1,4 +1,4 @@
-// Assignmetnt 1
+// Assignmetnt Untitled
 let favourite_colour = "White";
 console.log(favourite_colour);
 
@@ -29,5 +29,27 @@ if (tripleEquality === tripleEqualityCheck){
     console.log("Triple Equality check Successful")
 }
 // Testing === Check successful.
+
+// Assignment #1 (Write a function sum that finds the sum of two numbers.)
+function sum(a,b) {
+    return a + b;
+}
+console.log(sum(1,9));
+// Assignment #1 complete
+
+// Assignment #2 (Write a function called canVote that returns true or false if the age of a user is > 18)
+function canVote(age) {
+    if (age > 18) {
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(canVote(19));
+// Assignment #2 completed.
+
+
+// Assignment if/else (Write an if/else statement that checks if a number is even or odd. If it's even, print "The number is even." Otherwise, print "The number is odd.)
 
 
