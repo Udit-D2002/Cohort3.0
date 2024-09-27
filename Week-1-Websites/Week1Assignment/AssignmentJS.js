@@ -80,8 +80,25 @@ console.log(sum(5));
 
 
 
+// Uderstanding Loops in JS.
+
+// For Loop : for (initialization, condition, incerementORdecrement) {body of loop}
+//          initialization: Sets a variable before the loop starts (commonly used to initialize a counter).
+//          condition: The loop continues to run as long as this condition is true.
+//          increment: The code that is executed after each iteration of the loop (usually increments or decrements the counter).
+
+// For loop example
+let arr1 = ["firstString", "secondString", "thirdString"]
+for (let i = 0; i < arr1.length; i++) {
+    console.log(arr1[i]);
+}
+// For loop example finished.
 
 
-
-
-
+// While loop
+let j = 0;
+while (j < 5) {
+    console.log(j); // Outputs 0 to 4
+    j++;
+}
+// While loop completes
