@@ -174,6 +174,19 @@ canVote(user3)
 //                                  and returns only the users who are more than 18 years old)
 
 
+// Assignment Object of Objects (Create a function that takes an array of objects as input,
+//                               and returns the users whose age > 18 and are male)
+function arrAsInp(inpArr) {
+    let array2 = [];
+    for (let q = 0; q < inpArr.length; q++){
+        if (arrOfObj.Age > 18 && arrOfObj.Gender === "Male"){
+            console.log(arrOfObj.Name)
+        }
+    }
+}
+let arrOfObj = [{Name:"Udit", Age:22, Education:"ECE", Gender:"Male"}, {Name:"Shyam", Age:20, Education: "EE",Gender:"Male"}]
+arrAsInp(arrOfObj)
+
 
 
 
