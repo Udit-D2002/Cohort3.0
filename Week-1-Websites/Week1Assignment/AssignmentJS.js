@@ -102,3 +102,85 @@ while (j < 5) {
     j++;
 }
 // While loop completes
+
+
+
+
+// Complex types Assignments
+
+// Objects   
+// Assingment #1 (Write a function that takes a user as an input and greets them with their name and age)
+let user = {
+    firstName: "Udit",
+    age: 22,
+}
+function greeting(user) {
+    console.log("Hi " + user["firstName"],"Your age is:", user["age"]);
+}
+greeting(user)
+// Assignment #1 completed
+
+
+// Assignment #2 (Write a function that takes a new object as input which has name , age  and gender 
+//                  and greets the user with their gender (Hi Mr/Mrs/Others harkirat, your age is 21))
+
+let user2 = {
+    firstName: "Udit",
+    age: 22,
+    gender: "Male",
+}
+function greeting(user2) {
+    if (user2.gender === "Male") {
+        console.log("Hi Mr. " + user2["firstName"],"Your age is:", user2["age"]);
+    } else {
+        console.log("You mistyped your gender");
+    }
+    
+}
+greeting(user2)
+// Assignment #2 complete
+
+
+// Assignment #3
+let user3 = {
+    firstName: "Udit",
+    age: 22,
+    gender: "Male",
+}
+function greeting(user3) {
+    if (user3.gender === "Male") {
+        console.log("Hi Mr. " + user3["firstName"],"Your age is:", user3["age"]);
+    } else {
+        console.log("You mistyped your gender");
+    }
+    
+}
+greeting(user3)
+
+function canVote(user3){
+    if (user3.age >= 18){
+        console.log("You are eligible to vote.");
+    } else{
+        console.log("You are minor, can't vote.");
+    }
+}
+canVote(user3)
+// Assignment #3 complete
+
+// Due Assignment Arrays (Write a function that takes an array of numbers as input, 
+//                      and returns a new array with only even values. Read about filter in JS)
+
+// Due Assignment Array of Objects (Write a function that takes an array of users as inputs 
+//                                  and returns only the users who are more than 18 years old)
+
+
+
+
+
+
+
+
+
+
+
+
