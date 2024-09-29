@@ -1,0 +1,1 @@
+File created to test the synchoronous code where two files are read synchoronously.
