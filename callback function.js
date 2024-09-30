@@ -61,9 +61,39 @@ console.log(readData3);
 // Asynchronously reading Both files A.txt and B.txt
 const fs2 = require('fs');
 
+function getDataOfFile(err, data){
+    if (err){
+        console.log("Either Data or File not found.")
+    } else {
+        console.log("Data from the file is : ", data)
+    }
+}
+fs.readFile("A.txt", "utf-8", getDataOfFile)
+fs.readFile("B.txt", "utf-8", getDataOfFile)
+console.log("hi befor Asynchronously reading data from files")
+// Asynchronously reading Both files A.txt and B.txt done
 
+// Asynchronously reading Files while processor's thread(or may be processor)???????
+// is busy
 
+const fs3 = require('fs');
 
+function getDataOfFile(err, data){
+    if (err){
+        console.log("Either Data or File not found.")
+    } else {
+        console.log("Data from the file is : ", data)
+    }
+}
+fs.readFile("A.txt", "utf-8", getDataOfFile)
+let increasingNumbers = 0;
+for (let w = 0; w < 100000; w++){
+    increasingNumbers++
+    
+}
+console.log(increasingNumbers)
+fs.readFile("B.txt", "utf-8", getDataOfFile)
+console.log("hi before Asynchronously reading data from files")
 
 
 
