@@ -82,7 +82,7 @@ function getDataOfFile(err, data){
     if (err){
         console.log("Either Data or File not found.")
     } else {
-        console.log("Data from the file is : ", data)
+        console.log(`"Data from the file is :  ${data}"`)
     }
 }
 fs.readFile("A.txt", "utf-8", getDataOfFile)
